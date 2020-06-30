@@ -15,3 +15,15 @@ function newFunction2 (name ='Nicolás', age = 24, country = 'col') {
 
 newFunction();
 newFunction2();
+
+// Como se concatenaban textos antes. 
+
+let hola = "hola";
+let mundo = "mundo";
+console.log(hola + ' ' + mundo)
+
+// como se concatena ahora con template literals
+
+let hello = "hello";
+let world = "world";
+console.log(`${hello} ${world}`);
