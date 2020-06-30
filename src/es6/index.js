@@ -27,3 +27,17 @@ console.log(hola + ' ' + mundo)
 let hello = "hello";
 let world = "world";
 console.log(`${hello} ${world}`);
+
+
+// multilínea antes: 
+
+let lorem = "frase epica \n" 
+						+ "otra frase epica";
+
+
+//  multilínea después ES6+
+
+let lorem2 = `frase epica
+otra frase epica`;
+            
+console.log(lorem2)
