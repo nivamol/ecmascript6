@@ -66,3 +66,34 @@ let team2 = ['Carlos', 'Ernesto', 'Juan']
 let education = ['David', ...team1, ...team2]; 
 
 console.log(education);
+
+
+// let, const 
+// let = nueva forma de declarar variables.
+
+// variables antes: 
+
+var hola = "hola";
+// con var se puede acceder a ella de manera global
+
+let saludo = "hola";
+// con let la variable solo esta disponible en su scope.
+
+{
+	var globalVar = "global var";
+}
+
+{
+let globalLet = "Global let"
+  console.log(globalLet);
+//aqui se visualiza normalmente en consola.
+}
+
+console.log(globalVar);
+console.log(globalLet);
+// let nos da reference error porque esta en otro bloque.
+// var se muestra correctamente. 
+
+const a = 'b'; 
+// Definir variables que no van a cambiar nunca su valor.
+// al intentar reasignar el valor da error.
