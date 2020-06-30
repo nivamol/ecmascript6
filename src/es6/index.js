@@ -41,3 +41,28 @@ let lorem2 = `frase epica
 otra frase epica`;
             
 console.log(lorem2)
+
+// Desestructuración
+// Acceder a objetos antes: 
+let person = {
+	'name': 'Nicolás',
+	'age' : 24, 
+	'country': 'Colombia'
+}
+console.log(person.name, person.age)
+
+//Acceder a objetos ES6+:
+
+let {name, age, country} = person;
+console.log(name, age, country);
+
+// Spread operator (operdor de propagación)
+// nos permite expandir varios elementos.
+
+let team1 = ['Nicolas', 'Oscar', 'julian'] 
+let team2 = ['Carlos', 'Ernesto', 'Juan']
+
+// aquí unimos los 2 strings.
+let education = ['David', ...team1, ...team2]; 
+
+console.log(education);
