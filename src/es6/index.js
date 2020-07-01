@@ -97,3 +97,67 @@ console.log(globalLet);
 const a = 'b'; 
 // Definir variables que no van a cambiar nunca su valor.
 // al intentar reasignar el valor da error.
+
+
+// ------ Arrow Functions, Promesas y Parámetros en objetos
+
+
+//crear objetos antes.
+let name = "nicolas";
+let age = 24;
+
+// obj = {name: name, age: age};
+// console.log(obj)
+
+//crear objetos ES&+
+
+obj2 = {name, age};
+console.log(obj2)
+
+
+//arrow functions:
+
+const names = [
+  {
+    name: "nicolas",
+    age: 24
+  }
+  {
+    name: "oscar",
+    age: 23
+  }
+]
+
+let listOfNames = names.map(function(item) {
+  console.log(item.name)
+  //con esto conseguimos imprimir en consola el nombre de el item. 
+})
+
+//lo mismo con arrow functions. 
+//forma 1
+const listOfNames2 = names.map(item => console.log(item.name));
+// forma 2
+const listOfNames3 = (name, age, country) => {
+  ..., 
+}
+//forma 4
+const listOfNames4 = name => {}; // en caso de recibir solo un parámetro ignoramos los paréntesis. 
+
+const square = num => num * num;
+
+// ------------ Promesas
+
+const helloPromise = () => {
+	return new Promise((resolve, reject) => {
+    if(true) {
+      resolve("hey");
+    } else {
+      reject("algo salio mal");
+    }
+	});
+}
+
+helloPromise()
+  .then(response => console.log(response))
+  .then(() => console.log('hola'))
+  .catch(error => console.log(error));
